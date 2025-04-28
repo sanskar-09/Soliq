@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <div className="flex justify-start items-center mt-3 mx-auto max-w-screen-xl">
+        <div className="flex justify-start items-center mx-auto max-w-screen-xl border-black border-[1px]">
             {/* Logo */}
             <div className="flex gap-x-1 ml-10" onClick={() => navigate("/")}>
                 <img
@@ -22,10 +22,10 @@ const Navbar = () => {
             <div className="font-[Gabarito] text-xl ml-[20%]">
                 <ul className="flex gap-x-10 cursor-pointer">
                     <li onClick={() => navigate("/")}>Home</li>
-                    <li onClick={() => navigate("/")}>Dashboard</li>
-                    <li onClick={() => navigate("/")}>Savings</li>
-                    <li onClick={() => navigate("/")}>Insights</li>
-                    <li onClick={() => navigate("/")}>Optimisation</li>
+                    <li onClick={() => navigate("/dashboard")}>Dashboard</li>
+                    <li>Savings</li>
+                    <li>Insights</li>
+                    <li>Optimisation</li>
                     <li onClick={() => navigate("/contact")}>Contact</li>
                 </ul>
             </div>

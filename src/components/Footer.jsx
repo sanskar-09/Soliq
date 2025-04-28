@@ -10,9 +10,9 @@ import logo from "../assets/logo.jpeg";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col border-black border-[1px] mt-5'>
       {/* Top Section */}
-      <div className="res-width flex flex-col md:flex-row justify-start md:justify-between 2xl:gap-16 mt-[70px] ml-4 md:ml-10">
+      <div className="flex flex-col md:flex-row justify-start md:justify-between 2xl:gap-16 mt-[10px] ml-4 md:ml-10">
         {/* First column */}
         <div className="flex flex-col mb-4 md:mb-0">
           <div>
@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="flex flex-row mb-4 items-center">
               <FaPhoneVolume color="#000000" className="mt-2" size={18} />
               <div className="flex flex-col">
-                <h5 className="text-black mt-1 ml-3">+91 96233 91366</h5>
+                <h5 className="text-black mt-1 ml-3">+91 9623391366 / 9272116176</h5>
               </div>
             </div>
             <div className="flex flex-row mb-4 items-center">
@@ -49,7 +49,7 @@ const Footer = () => {
         {/* Second column */}
         <div className="md:w-[60%] flex justify-start md:justify-between flex-wrap gap-6 mt-8 md:mt-12">
           <div className="flex flex-col ml-2 md:ml-0">
-            <h4 className="text-black font-semibold text-[22px]">Company</h4>
+            <h4 className="text-black font-semibold text-[22px]">Quick Links</h4>
             <h4
               className="text-black text-[15px] mb-4 mt-4 cursor-pointer hover:text-[#004AAD]"
               onClick={() => navigate("/about")}
@@ -79,7 +79,7 @@ const Footer = () => {
       </div>
 
       {/* Separator Line */}
-      <div className="h-[0.1rem] bg-white/50 res-width my-4 mx-4 md:mx-10"></div>
+      <div className="h-[0.1rem] bg-white/50 my-4 mx-4 md:mx-10"></div>
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 mb-4 gap-4">

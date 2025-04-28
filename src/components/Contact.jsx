@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "../components/Footer"
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -55,6 +56,7 @@ const Contact = () => {
             });
     };
     return (
+        <>
         <div className='flex flex-col justify-center items-center'>
             <form
                 className="flex flex-col text-black md:mt-12 h-fit max-sm:px-4"
@@ -109,6 +111,8 @@ const Contact = () => {
                 </button>
             </form>
         </div>
+        <Footer />
+        </>
     )
 }
 

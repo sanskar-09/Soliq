@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Policy from "./components/policy";
+import Dashboard from "./components/Dashboard";
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/privacy-policy" element={<Policy />}></Route>
           <Route path="/terms-conditions" element={<Terms />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
         </Routes>
         
       </BrowserRouter>
